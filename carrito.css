@@ -1,0 +1,51 @@
+.imagenes{
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.imgAceite{
+    margin-left: 25px;
+    width: 100px;
+    height: 100px;
+    
+}
+
+.imgArroz{
+    margin-left: 25px;
+    width: 100px;
+    height: 100px;
+    
+}
+
+.imgAzucar{
+    margin-left: 25px;
+    width: 100px;
+    height: 100px;
+ }
+
+.imgSal{
+    margin-left: 25px;
+    width: 100px;
+    height: 100px;
+  
+}
+
+
+.cajas{
+   
+    width: 150px;
+    height: 280px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.boton{
+   margin-left: 10px;
+}
+
+.nombre{
+    text-align: center;
+    color: rgb(44, 41, 212);
+}
+
