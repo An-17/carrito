@@ -1,51 +1,54 @@
-.imagenes{
-    margin-left: 30px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+body { 
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
 }
 
-.imgAceite{
-    margin-left: 25px;
-    width: 100px;
-    height: 100px;
-    
-}
-
-.imgArroz{
-    margin-left: 25px;
-    width: 100px;
-    height: 100px;
-    
-}
-
-.imgAzucar{
-    margin-left: 25px;
-    width: 100px;
-    height: 100px;
- }
-
-.imgSal{
-    margin-left: 25px;
-    width: 100px;
-    height: 100px;
-  
-}
-
-
-.cajas{
-   
-    width: 150px;
-    height: 280px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
-}
-
-.boton{
-   margin-left: 10px;
-}
-
-.nombre{
+h1, h2 {
     text-align: center;
-    color: rgb(44, 41, 212);
 }
 
+.productos, .carrito {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px auto;
+    background: #fff;
+    display: flex; /* Usamos flexbox para la disposición horizontal */
+    flex-wrap: wrap; /* Permite que los productos se ajusten si es necesario */
+    gap: 10px; /* Espacio entre productos */
+    justify-content: center; /* Centra los productos en el contenedor */
+}
+
+.producto {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 200px; /* Establece un tamaño fijo para cada producto */
+    display: flex;
+    flex-direction: column; /* Hace que el contenido dentro del producto se apile verticalmente */
+    align-items: center; /* Centra el contenido dentro del producto */
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px; /* Da un poco de espacio entre el contenido y el botón */
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#comprar {
+    width: 100%;
+    background-color: #007bff;
+}
+
+#comprar:hover {
+    background-color: #0056b3;
+}

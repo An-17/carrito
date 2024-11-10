@@ -1,17 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="carrito.css">
 </head>
 <body>
-    
-<div id="listaCompras">
+    <h1>Carrito de Compras</h1>
+    <div>
+        <h2>Productos</h2>
+    </div> 
+    <div class="productos">
 
-
-</div>
-
-<script src="carrito.js"></script>
+        <div class="producto">
+            <img src="img/Aceite.webp" alt="Aceite"
+            width="200"
+            height="200"
+          >
+            <h2> Aceite -  ₡2000 </h2>
+            <button class="agregar" data-nombre="Aceite" data-precio="2000">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="img/Arroz-Tio-Pelon-99-Grano-Entero-8000-gr-1-27771.webp" alt="Arroz"
+              width="200"
+              height="200"
+            
+            >
+            <h2>Arroz -  ₡3500</h2>
+            <button class="agregar" data-nombre="Arroz" data-precio="3500">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="img/azucar.jpg" alt="Azucar"
+            width="200"
+            height="200"
+            > 
+            <h2>Azucar -  ₡1500</h2>
+            <button class="agregar" data-nombre="Azucar" data-precio="1500">Agregar al Carrito</button>
+        </div>
+    </div>
+    <div class="carrito">
+        <h2>Carrito</h2>
+        <ul id="lista-carrito"></ul>
+        <p id="total">Total: $0</p>
+        <button id="comprar">Realizar Pedido</button>
+    </div>
+    <script src="carrito.js"></script>
 </body>
 </html>
+
